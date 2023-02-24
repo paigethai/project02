@@ -1,8 +1,14 @@
 // PSUEDO CODE  --> User Journal Entry / Input
 
-// Create a file (firebase.js) to configure and export the Firebase object.
+// Create a file (firebase.js) to configure and export the Firebase object
 
 // Import database object
+import firebaseInfo from "./firebase.js";
+
+import { getDatabase, ref } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+
+const database = getDatabase(firebaseInfo);
+const dbRef = ref(database);
 
 // Use document.querySelector() to get our JS objects:
     // 1. One that points to the form that would hold the input text area
