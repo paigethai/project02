@@ -1,0 +1,35 @@
+{
+    "prompts": [
+        {
+            "promptOne": "Journal prompt 1 will go in here",
+            "promptTwo": "Journal prompt 2 will go in here",
+            "promptThree": "Journal prompt 3 will go in here",
+            "promptFour": "Journal prompt 4 will go in here",
+            "promptFive": "Journal prompt 5 will go in here"
+        }
+    ],
+
+    "userEntry": [
+        {
+            "userEntryOne": [
+                {
+                    "userDateInput": "2023-02-25",
+                    "userTextInput": "Journal prompt 1 will go in here"
+                }
+            ],
+            "userEntryTwo": [
+                {
+                    "userDateInput": "2023-02-26",
+                    "userTextInput": "Journal prompt 2 will go in here"
+                }
+            ],
+            "userEntryThree": [
+                {
+                    "userDateInput": "2023-02-27",
+                    "userTextInput": "Journal prompt 3 will go in here"
+                }
+            ]
+        }
+    ]
+}
+

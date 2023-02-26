@@ -45,18 +45,15 @@ const dbRef = ref(database);
 // Use doucment.querySelector() to get our JS objects: 
     // 1. One that points to the class name of "prompt-container" within the aside 
 
-// Create a variable that'll hold an array of prompts (objects)
-
-// Create a function that'll add the prompt variable to the database 
-
-// Call the function to store the prompts in the database
+    // Add them manually directly into Firebase db
+        // Create a variable that'll hold an array of prompts (objects)
+        // Create a function that'll add the prompt variable to the database 
+        // Call the function to store the prompts in the database
 
 // Using the onValue() method to pull in our data from firebase 
     // This will get the data that we just sent to the database, back to our code so we can work with it 
 
     // Use a callback function that'll give us direct access to the individual prompts within the prompt object
-
-// *** Using the get() function to get a snapshot of the current array of prompts ***
 
 // Refer to the variable that the prompts are stored within and using a Math.floor() and Math.random(), randomly select a prompt (value) from the prompts array
     // Store the above within a variable --> randomPrompt
@@ -67,7 +64,9 @@ const dbRef = ref(database);
 
     // QUESTIONS FOR MENTOR:
         // * will the page automatically refresh with the preventDefault() method and the Firebase --> will it hard refresh?
+            // randomizer function will run on refresh
 
         // * how do we use the get() function properly with what we have?
+            // this function is unnecessary ^ 
 
         // * for loop on line 29 thats within the onValue() 
