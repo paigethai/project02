@@ -22,6 +22,7 @@ const dbRef = ref(database);
     // Retrieve the date entry from the input via document.querySelector('input') and store withiin a variable
     // Retrieve the journal entry from the input via document.querySelector('input') and store within a variable
     // Push the user's date entry and journal input to the external database using an if statement 
+        // Save the user entry / value to the database 
     // Clear the input field to an empty string 
 
 
@@ -29,8 +30,7 @@ const dbRef = ref(database);
 
 // Call onValue() to get a snapshot of the database, and to get a new snapshot
     // Update realtime database from anytime change occurs on app 
-    // In the callback object - if statement - if the user's entry exist
-        // Save the user entry / value to the database 
+    // In the callback object - if statement - to check for data stored in the database to eventually append to our page
     // Clear the existing ul from the page using innerHTML
     // Use the for loop that'll append the li children to ul 
 
@@ -45,7 +45,8 @@ const dbRef = ref(database);
 // Use doucment.querySelector() to get our JS objects: 
     // 1. One that points to the class name of "prompt-container" within the aside 
 
-    // Add them manually directly into Firebase db
+    // IMPORT DATE via importing JSON file 
+    // Add them manually directly into Firebase db  
         // Create a variable that'll hold an array of prompts (objects)
         // Create a function that'll add the prompt variable to the database 
         // Call the function to store the prompts in the database
