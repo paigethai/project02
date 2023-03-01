@@ -20,71 +20,76 @@
 	<header>
 		<div class="flexContainer">
 			<nav>
-				<button class="navIcon">
-					<i class="fa-solid fa-bars">
-						<span class="sr-only">Open navigation menu</span>
-					</i>
-					<i class="fa-solid fa-x">
-						<span class="sr-only">Close navigation menu</span>
-					</i>
-				</button>
+				<div class="flexContainer">
+					<button class="navIcons">
+						<i class="fa-solid fa-x">
+							<span class="sr-only">Close navigation menu</span>
+						</i>
+						<i class="fa-solid fa-bars">
+							<span class="sr-only">Open navigation menu</span>
+						</i>
+					</button>
 
-				<!-- NAV ASIDE -->
+					<!-- NAV ASIDE -->
+					<aside>
+						<!-- Nav IMG -->
+						<figure	class="headerImg">
+							<img src="./assets/tree.jpg" alt="A tree branch against snow with a shadow">
+						</figure>
 
-				<aside>
-					<!-- Nav IMG -->
-					<figure	class="headerImg">
-						<img src="./assets/tree.jpg" alt="A tree branch against snow with a shadow">
-					</figure>
-
-					<!-- PROMPT SECTION -->
-					<section class="prompt">
-						
-						<div class="wrapper">
-							<p class="sr-only">This is a writing prompt, let it inspire you or write whatever you would like!</p>
+						<!-- PROMPT SECTION -->
+						<section class="prompt">					
+							<div class="wrapper">
+								<p class="sr-only">This is a writing prompt, let it inspire you or write whatever you would like!</p>
 							
-							<div class="promptIconContainer">
-								<i class="fa-solid fa-quote-left">
-									<span class="sr-only">Left quotation mark</span>
-								</i>
-								
-								<div class="promptContainer">
-									<!-- this is where the prompt will populate -->
-								</div><!-- end of .promptContainer -->
-								
-								<i class="fa-solid fa-quote-right">
-									<span class="sr-only">Right quotation mark</span>
-								</i>
-							</div><!-- end of .promptIconContainer -->
-						</div><!-- end of .wrapper -->
-					</section>
+								<div class="promptIconContainer">
+									<i class="fa-solid fa-quote-left">
+										<span class="sr-only">Opening quotation mark</span>
+									</i>
+									
+									<div class="promptContainer">
+										<!-- this is where the prompt will populate -->
+										<!-- place holder prompt for styling -->
+										<h2>If you can dance and be free and be embarrassed, you can rule the world.</h2>
+									</div><!-- end of .promptContainer -->
+									
+									<i class="fa-solid fa-quote-right right">
+										<span class="sr-only">Closing quotation mark</span>
+									</i>
+								</div><!-- end of .promptIconContainer -->
+							</div><!-- end of .wrapper -->
+						</section>
 
-					<!-- CALENDAR IMG -->
-					<figure class="calendar">
-
-						<!-- ADD IMG HERE AND ALT TEXT !!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-						<img src="" alt="">
-
-						<img src="./assets/calendar.png" alt="12 month calendar view of 2023">
-					</figure>
-
-					<!-- TO DO SECTION -->
-					<section class="toDo">
+						<!-- CALENDAR IMG -->
 						<div class="wrapper">
-							<!-- come back to form and determin if we need name action method etc!!!!!!!!!!!!!!!!!!!! -->
-							<form class="toDoForm">
-								<div class="submitContainer">
-									<button></button>
-									<label for="toDoItem" class="sr-only">Add a to do item</label>
-									<input type="text" id="toDoItem" placeholder="To Do">
-								</div><!-- end of .submitContainer -->
-							</form>
-							<ul class="toDoUl">
-								<!-- li gets added dynamically here -->
-							</ul>
-						</div><!-- end of .wrapper -->
-					</section>
-				</aside>
+							<figure class="calendar">
+								<img src="./assets/calendar.png" alt="12 month calendar view of 2023">
+							</figure>
+						</div>
+
+						<!-- TO DO SECTION -->
+						<section class="toDo">
+							<div class="wrapper">
+								<!-- come back to form and determin if we need name action method etc!!!!!!!!!!!!!!!!!!!! -->
+								<form class="toDoForm">
+									<div class="submitContainer">
+										<button class="toDoSubmit">Submit</button>
+										<label for="toDoItem" class="sr-only">Add a to do item!</label>
+										<input type="text" id="toDoItem" placeholder="To Do">
+									</div><!-- end of .submitContainer -->
+								</form>
+								<ul class="toDoUl">
+									<!-- li gets added dynamically here -->
+									<!-- place holder li until strech goal is complete -->
+									<li>Meditate</li>
+									<li>Hydrate</li>
+									<li>Skin Care</li>
+									<li>Organize</li>
+								</ul>
+							</div><!-- end of .wrapper -->
+						</section>
+					</aside>
+				</div><!-- end of nav .flexContainer -->
 			</nav>
 
 			<div class="wrapper">
