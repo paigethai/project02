@@ -12,15 +12,14 @@ const dbRef = ref(database);
 
 // Use document.querySelector() to get our JS objects:
     // 1. One that points to the form that would hold the input text area
-    // 2. One that points to an input field where the user would input text that indicates time / date of their entry
-    // 3. One that points to the textarea where the user inputs their journal entry via text
-    // 4. One that points to the button for the user to submit their entry
-    // 5. One that points to the ul will hold the the each li (journal entry)
+    // 2. One that points to the button for the user to submit their entry
+    // 3. One that points to the ul will hold the the each li (journal entry)
+
 
 // Add an eventListener() to the form to listen for 'submit'. On submit it should: 
-    // Prevent the default refresh of the browser, using the preventDefault() method
-    // Retrieve the date entry from the input via document.querySelector('input') and store withiin a variable
-    // Retrieve the journal entry from the input via document.querySelector('input') and store within a variable
+    // Prevent the default refresh of the browser, using the preventDefault() method   
+    // Retrieve the journal entry from the input via document.querySelector('textarea') and store within a variable
+
     // Push the user's date entry and journal input to the external database using an if statement 
         // Save the user entry / value to the database 
     // Clear the input field to an empty string 
